@@ -19,7 +19,7 @@ public class SumEvenOddStream {
 //
 //        Optional<Integer> max2 = numbers.stream().max(Integer::compare);   // to find the max
 
-        System.out.println(evenSum+" "+ max.get());
+        System.out.println("even: "+evenSum+" odd: "+oddSum+" max: "+ max.get());
 
     }
 }
