@@ -36,6 +36,16 @@ public class ComparatorEg {
         }
     };
 
+    static Comparator<Student> comparator2 = new Comparator<Student>() {
+        @Override
+        public int compare(Student o1, Student o2) {
+            if(o1.name.length() > o2.name.length())
+                return 1;                                            // return 1 means, it will swap these 2 elements
+            else
+                return -1;
+        }
+    };
+
 
     public static void main(String[] args) {
         List<Student> students = new ArrayList<>();
