@@ -1,7 +1,9 @@
 package streams;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 
 
 //Write a Java program to calculate the sum of all even, odd numbers in a list using streams.
@@ -13,9 +15,11 @@ public class SumEvenOddStream {
         Integer evenSum = numbers.stream().filter(i->i%2==0).mapToInt(Integer::intValue).sum();
         Integer oddSum = numbers.stream().filter(i->i%2!=0).mapToInt(Integer::intValue).sum();
 
-//        numbers.stream().max(Integer::compare);   to find the max
+        Optional<Integer> max = numbers.stream().max(Comparator.comparingInt(i -> i));  // to find the max
+//
+//        Optional<Integer> max2 = numbers.stream().max(Integer::compare);   // to find the max
 
-        System.out.println(evenSum+" "+ oddSum);
+        System.out.println(evenSum+" "+ max.get());
 
     }
 }

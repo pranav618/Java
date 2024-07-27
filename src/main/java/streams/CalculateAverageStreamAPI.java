@@ -11,11 +11,11 @@ public class CalculateAverageStreamAPI {
     public static void main(String args[]){
         List<Integer> list = Arrays.asList(2,4,6,7,8,2);
         //2 ways , using lambda expression and using method reference
-        double sum = list.stream().mapToDouble(d-> Double.valueOf((d))).average().orElse(0.0);
-        double sum2 = list.stream().mapToDouble(Double::valueOf).average().orElse(0.0);
+        double avg = list.stream().mapToDouble(d-> Double.valueOf((d))).average().orElse(0.0);
+        double avg2 = list.stream().mapToDouble(Double::valueOf).average().orElse(0.0);
 //        OptionalDouble sum3 = list.stream().mapToDouble(Double::valueOf).average();
-        Double avg= Double.valueOf(sum2/ (list.size()));
-        System.out.println(String.format("%.2f",avg));
+//        Double avg= Double.valueOf(sum2/ (list.size()));
+        System.out.println(String.format("%.2f",avg2));
 
 
     }
