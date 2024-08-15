@@ -1,4 +1,4 @@
-package desingPattern.adaptarBehavioralDesignPatten.PencilPen;
+package desingPattern.adaptarStructuralDesignPatten.PencilPen;
 
 public class PencilPen {
 

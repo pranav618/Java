@@ -1,4 +1,4 @@
-
+package java8;
 
 @java.lang.FunctionalInterface                       //only 1 abstract method, so functional interface
 interface A{

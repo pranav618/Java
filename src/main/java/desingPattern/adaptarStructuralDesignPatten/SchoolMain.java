@@ -1,4 +1,4 @@
-package desingPattern.adaptarBehavioralDesignPatten;
+package desingPattern.adaptarStructuralDesignPatten;
 
 public class SchoolMain {
 

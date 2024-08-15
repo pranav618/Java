@@ -1,6 +1,6 @@
-package desingPattern.adaptarBehavioralDesignPatten;
+package desingPattern.adaptarStructuralDesignPatten;
 
-import desingPattern.adaptarBehavioralDesignPatten.PencilPen.PencilPen;
+import desingPattern.adaptarStructuralDesignPatten.PencilPen.PencilPen;
 
 public class PencilAdapter implements Pen{
 
